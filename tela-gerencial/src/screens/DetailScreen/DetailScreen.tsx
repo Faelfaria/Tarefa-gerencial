@@ -16,7 +16,7 @@ const DetailScreen = ({ route, navigation }) => {
 
   const fetchTask = async () => {
     try {
-      const tasksData: Task[] = await readTasks(); // Defina o tipo de retorno como Task[]
+      const tasksData: Task[] = await readTasks();
       const task = tasksData.find(t => t.id === id);
       if (task) {
         setTask(task);

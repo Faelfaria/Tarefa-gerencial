@@ -27,7 +27,7 @@ export const createTask = async (title, description, categoryColor) => {
   }
 };
 
-// Função para atualizar uma tarefa existente
+// Para atualizar uma tarefa já existente
 export const updateTask = async (id: number, title: string, description: string, categoryColor: string) => {
   try {
     const db = await SQLite.openDatabaseAsync('tasks.db');
@@ -44,7 +44,7 @@ export const updateTask = async (id: number, title: string, description: string,
   }
 };
 
-// Função para excluir uma tarefa
+// Para que consiga xcluir uma tarefa
 export const deleteTask = async (id: number) => {
   try {
     const db = await SQLite.openDatabaseAsync('tasks.db');

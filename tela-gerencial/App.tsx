@@ -3,15 +3,15 @@ import { Provider as PaperProvider } from 'react-native-paper';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { setupDatabase } from './src/services/database';
-import { CreateScreen } from './CreateScreen';
-import { DetailScreen } from './DetailScreen';
-import { HomeScreen } from './DetailScreen';
+import { CreateScreen } from '../tela-gerencial/src/screens/CreateScreen';
+import { DetailScreen } from './src/screens/DetailScreen';
+import { HomeScreen } from './src/screens/HomeScreen';
 
 const Stack = createStackNavigator();
 
 const App = () => {
   useEffect(() => {
-    // Configura o banco de dados quando o aplicativo é carregado
+    // Configura a database quando o aplicativo é carregado
     setupDatabase();
   }, []);
 

@@ -8,7 +8,7 @@ const CreateScreen = ({ navigation }) => {
   const [description, setDescription] = useState('');
   const [categoryColor, setCategoryColor] = useState('green'); // Define a cor padrão como verde
 
-  // Função para salvar uma nova tarefa
+  // Adicionando uma função para salvar uma nova tarefa
   const handleSave = async () => {
     try {
       await createTask(title, description, categoryColor);

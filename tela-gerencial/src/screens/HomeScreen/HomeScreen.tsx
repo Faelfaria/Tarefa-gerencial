@@ -158,8 +158,8 @@ const styles = StyleSheet.create({
   },
   card: {
     marginVertical: 10,
-    borderWidth: 1, // Adiciona a largura da borda
-    borderColor: 'gray', // Adiciona a cor da borda
+    borderWidth: 1,
+    borderColor: 'gray',
   },
   headerContent: {
     flex: 1,
