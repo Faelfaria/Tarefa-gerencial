@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, StyleSheet, Text, Alert, Animated } from 'react-native';
 import { TextInput, Button, IconButton } from 'react-native-paper';
 import { readTasks, updateTask, deleteTask } from '../../services/tasks';
-import { Task } from '../../types/types'; // Importe o tipo Task
+import { Task } from '../../types/types';
 import { LongPressGestureHandler, State } from 'react-native-gesture-handler';
 
 const DetailScreen = ({ route, navigation }) => {

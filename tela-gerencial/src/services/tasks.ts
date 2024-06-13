@@ -1,7 +1,7 @@
 import { setupDatabase } from "./database";
 import * as SQLite from 'expo-sqlite';
 
-// Chamada assíncrona para configurar o banco de dados e criar a tabela de tarefas
+
 setupDatabase()
   .then(() => {
     console.log('Banco de dados configurado com sucesso');
@@ -10,7 +10,7 @@ setupDatabase()
     console.error('Erro ao configurar o banco de dados:', error);
   });
 
-// Função para inserir uma nova tarefa
+// Função é para inserir uma nova tarefa
 export const createTask = async (title, description, categoryColor) => {
   try {
     const db = await SQLite.openDatabaseAsync('tasks.db');
@@ -44,7 +44,7 @@ export const updateTask = async (id: number, title: string, description: string,
   }
 };
 
-// Para que consiga xcluir uma tarefa
+// Para que eu consiga excluir uma tarefa
 export const deleteTask = async (id: number) => {
   try {
     const db = await SQLite.openDatabaseAsync('tasks.db');
